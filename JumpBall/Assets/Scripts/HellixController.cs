@@ -63,8 +63,8 @@ public class HellixController : MonoBehaviour
             return;
         }
 
-        Camera.main.backgroundColor = allStages[stageNumber].stageBackground;
-        FindObjectOfType<BallController>().GetComponent<Renderer>().material.color = allStages[stageNumber].stageBallColor;
+       Camera.main.backgroundColor = allStages[stageNumber].stageBackground;
+       FindObjectOfType<BallController>().GetComponent<Renderer>().material.color = allStages[stageNumber].stageBallColor;
         transform.localEulerAngles = starPosition;
 
         foreach (GameObject go in spawnedLevels)

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+
 [Serializable]
 
 
@@ -16,12 +17,15 @@ public class Level
     public int deathPartCount = 1;
 }
 
-[CreateAssetMenu(fileName="Nuevo Nivel")]
+[CreateAssetMenu(fileName="Nivel")]
 public class Stage : ScriptableObject
 {
-    public Color stageBackground = Color.white;
-    public Color StageLevelPartColor = Color.white;
+   public Color stageBackground = Color.white;
+
+   public Color StageLevelPartColor = Color.white;
+
     public Color stageBallColor = Color.white;
+
 
     public List<Level> levels =new List<Level>();
 

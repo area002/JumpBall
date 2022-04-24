@@ -1,12 +1,14 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AudioManager
     - BallController
     - CamController
     - GameManager
     - GoalController
     - HellixController
     - Menu
+    - MenuPausa
     - PassScorePoint
     - Stage
     - UiManager
@@ -48,19 +50,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1478}
     - Class: 114
-      Script: {instanceID: 2002}
+      Script: {instanceID: 2004}
     - Class: 114
-      Script: {instanceID: 2292}
+      Script: {instanceID: 2294}
     - Class: 114
-      Script: {instanceID: 2404}
+      Script: {instanceID: 2406}
     - Class: 114
-      Script: {instanceID: 2572}
+      Script: {instanceID: 2478}
     - Class: 114
-      Script: {instanceID: 2756}
+      Script: {instanceID: 2576}
     - Class: 114
-      Script: {instanceID: 2842}
+      Script: {instanceID: 2760}
     - Class: 114
-      Script: {instanceID: 19988}
+      Script: {instanceID: 2846}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -104,6 +106,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 96
@@ -115,33 +119,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1478}
     - Class: 114
-      Script: {instanceID: 1624}
+      Script: {instanceID: 1626}
     - Class: 114
-      Script: {instanceID: 1632}
+      Script: {instanceID: 1634}
     - Class: 114
-      Script: {instanceID: 1820}
+      Script: {instanceID: 1822}
     - Class: 114
-      Script: {instanceID: 2002}
+      Script: {instanceID: 2004}
     - Class: 114
-      Script: {instanceID: 2292}
+      Script: {instanceID: 2294}
     - Class: 114
-      Script: {instanceID: 2404}
+      Script: {instanceID: 2406}
     - Class: 114
-      Script: {instanceID: 2434}
+      Script: {instanceID: 2436}
     - Class: 114
-      Script: {instanceID: 2572}
+      Script: {instanceID: 2576}
     - Class: 114
-      Script: {instanceID: 2756}
+      Script: {instanceID: 2760}
     - Class: 114
-      Script: {instanceID: 3036}
+      Script: {instanceID: 2846}
     - Class: 114
-      Script: {instanceID: 3172}
+      Script: {instanceID: 3040}
     - Class: 114
-      Script: {instanceID: 3702}
+      Script: {instanceID: 3176}
     - Class: 114
-      Script: {instanceID: 3856}
+      Script: {instanceID: 3706}
     - Class: 114
-      Script: {instanceID: 4264}
+      Script: {instanceID: 3860}
+    - Class: 114
+      Script: {instanceID: 3906}
+    - Class: 114
+      Script: {instanceID: 4270}
+    - Class: 114
+      Script: {instanceID: 18498}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -153,6 +163,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -207,7 +219,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 2bfd74b3d5f1f321829cda1069347de5
+      Hash: 7c60370b6950af2c2743e33644c45de9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BallController
@@ -325,6 +337,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Menu
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -591,6 +609,12 @@ ScriptsOnlyBuild:
     className: PassScorePoint
   - hash:
       serializedVersion: 2
+      Hash: 66056c2209ff8e6b238f8b056c7eb331
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioManager
+  - hash:
+      serializedVersion: 2
       Hash: 6980e81ddc615a861309d2d659cc3760
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -639,10 +663,10 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 9e4b57b56b8407a9b58c04a9e8d52ee8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Menu
+    className: MenuPausa
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

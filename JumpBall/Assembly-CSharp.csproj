@@ -53,16 +53,19 @@
     <UnityVersion>2020.3.30f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Sound.cs" />
     <Compile Include="Assets\Scripts\BallController.cs" />
     <Compile Include="Assets\Scripts\DeathPart.cs" />
     <Compile Include="Assets\Scripts\HellixController.cs" />
     <Compile Include="Assets\Scripts\UiManager.cs" />
+    <Compile Include="Assets\Scripts\Main\Menu.cs" />
     <Compile Include="Assets\Scripts\GoalController.cs" />
     <Compile Include="Assets\Scripts\CamController.cs" />
     <Compile Include="Assets\Scripts\Stage.cs" />
     <Compile Include="Assets\Scripts\PassScorePoint.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Main\Menu.cs" />
+    <Compile Include="Assets\MenuPausa.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

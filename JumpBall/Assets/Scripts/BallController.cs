@@ -12,6 +12,10 @@ public class BallController : MonoBehaviour
     public float superSpeed = 8;
     private bool IsSuperSpeedActive;
     private int perfectPassCount = 3;
+    public GameObject splash;
+
+    //public AudioSource BounceAudio;
+
 
     private void Start()
     {
@@ -21,6 +25,9 @@ public class BallController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        //BounceAudio.Play();
+        FindObjectOfType<AudioManager>().Play("bounce");
+        AddSplash(collision);
 
         if (ingnoreNextCollision)
         {
@@ -37,6 +44,7 @@ public class BallController : MonoBehaviour
             if (deathPart)
             {
                 GameManager.singleton.RestartLevel();
+                FindObjectOfType<AudioManager>().Play("game over");
             }
         }
 
@@ -64,10 +72,25 @@ public class BallController : MonoBehaviour
 
     private void Update()
     {
-        if(perfectPass>=perfectPassCount && !IsSuperSpeedActive)
+        if (perfectPass >= perfectPassCount && !IsSuperSpeedActive)
         {
             IsSuperSpeedActive = true;
             rb.AddForce(Vector3.down * superSpeed, ForceMode.Impulse);
         }
+
+       // FindObjectOfType<AudioManager>().Play("whoosh");
+    }
+
+    public void AddSplash( Collision collision)
+    {
+        GameObject newSplash;
+        newSplash = Instantiate(splash);
+
+        newSplash.transform.SetParent(collision.transform);
+
+        newSplash.transform.position = new Vector3(this.transform.position.x, this.transform.position.y - 0.11f, this.transform.position.z);
+
+        Destroy(newSplash, 3);
+
     }
 }

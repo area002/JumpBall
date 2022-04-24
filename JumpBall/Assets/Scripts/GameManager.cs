@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     public void NextLevel()
     {
         Debug.Log("Pasamos de nivel");
+        FindObjectOfType<AudioManager>().Play("win level");
         currentLevel++;
         FindObjectOfType<BallController>().ResetBall();
         FindObjectOfType<HellixController>().LoadStage(currentLevel);
@@ -44,6 +45,7 @@ public class GameManager : MonoBehaviour
     public void AddScore(int scoretoAdd)
     {
         currentScore += scoretoAdd;
+        FindObjectOfType<AudioManager>().Play("whoosh");
         if (currentScore > bestScore)
         {
             bestScore = currentScore;
